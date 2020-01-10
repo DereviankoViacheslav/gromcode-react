@@ -1,4 +1,4 @@
-const rootElem = document.querySelector('#root');
+const rootElement = document.querySelector('#root');
 
 const element = React.createElement(
   'div',
@@ -15,4 +15,4 @@ const element = React.createElement(
   ),
 );
 
-ReactDOM.render(element, rootElem);
+ReactDOM.render(element, rootElement);
