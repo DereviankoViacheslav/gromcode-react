@@ -22,7 +22,7 @@ const element = (
         <input id="age" className="form-input" name="age" defaultValue={17} type="number" />
         <span style={style}>To young</span>
       </div>
-      <button className="submit-buttom" type="submit">Submit</button>
+      <button className="submit-button" type="submit">Submit</button>
     </form>
   </main>
 );
