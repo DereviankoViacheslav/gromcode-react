@@ -8,7 +8,7 @@ const element = (
     <h1 className="title">Search Form</h1>
     <div>
       <input type="text" />
-      <button>Submit</button>
+      <button>Search</button>
     </div>
   </>
 );
