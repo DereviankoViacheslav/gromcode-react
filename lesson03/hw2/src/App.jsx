@@ -1,10 +1,17 @@
 import React from 'react';
-import Greeting from './Greeting';
+import Profile from './Profile';
 import './app.scss';
 
-function App(props) {
+const userData = {
+  firstName: 'John',
+  lastName: 'Doe',
+  birthDate: '1991-01-17T11:11:11.819Z',
+  birthPlace: 'London'
+};
+
+function App() {
   return (
-    <Greeting firstName="Bobik" lastName="Dodik" birthDate={new Date('2000-01-15')} />
+    <Profile userData={userData} />
   );
 }
 
