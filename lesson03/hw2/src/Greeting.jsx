@@ -2,15 +2,18 @@ import React from 'react';
 import moment from "moment";
 import './greeting.scss';
 
-function fetFullYears(birthDate) {
-  return moment(new Date()).diff(moment(birthDate), "years")
-}
+const formatDate = date => moment(date).format("DD MMM YYYY");
 
 function Comment(props) {
   return (
-    <div className="greeting">
-      {`My name is ${props.firstName} ${props.lastName}. I'm ${fetFullYears(props.birthDate)} years old`}
-    </div>
+    <>
+      <div className="greeting__name">
+        {`${props.userData.firstName} ${props.userData.lastName}`}
+      </div>
+      <div className="greeting__birth">
+        {`Was born ${formatDate(props.userData.birthDate)} in ${props.userData.birthPlace}`}
+      </div>
+    </>
   );
 }
 
