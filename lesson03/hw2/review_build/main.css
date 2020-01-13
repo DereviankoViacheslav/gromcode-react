@@ -1,4 +1,4 @@
-.greeting__name{font-size:24px}.greeting__birth{font-size:18px}
+.profile{text-align:center}.profile__name{font-size:24px}.profile__birth{font-size:18px}
 
-body{font-family:Arial, Helvetica, sans-serif}#root{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+body{font-family:Arial, Helvetica, sans-serif}#root{height:100vh;display:flex;justify-content:center;align-items:center}
 
