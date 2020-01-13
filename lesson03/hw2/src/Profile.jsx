@@ -1,12 +1,11 @@
 import React from 'react';
 import moment from "moment";
-import './greeting.scss';
 
 function getFullYears(birthDate) {
   return moment(new Date()).diff(moment(birthDate), "years")
 }
 
-function Comment(props) {
+function Profile(props) {
   return (
     <div className="greeting">
       {`My name is ${props.firstName} ${props.lastName}. I'm ${getFullYears(props.birthDate)} years old`}
@@ -14,4 +13,4 @@ function Comment(props) {
   );
 }
 
-export default Comment;
+export default Profile;
