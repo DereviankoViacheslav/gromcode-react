@@ -1,13 +1,13 @@
 import React from 'react';
-import Counter from './Counter';
+import Clock from './Clock';
 import './app.scss';
 
 function App() {
   return (
     <>
-      <Counter start={0} interval={500} />
-      <Counter start={0} interval={1000} />
-      <Counter start={0} interval={2000} />
+      <Clock location="New York" offset={-5} />
+      <Clock location="Kyiv" offset={2} />
+      <Clock location="London" offset={0} />
     </>
   );
 }
