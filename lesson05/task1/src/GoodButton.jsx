@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './button.scss';
 
-class Clock extends Component {
+function GoodButton() {
 
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <button
-        className="fancy-button"
-        onClick={() => alert('Good job!')}>
-        Click me!
+  return (
+    <button
+      className="fancy-button"
+      onClick={() => alert('Good job!')}>
+      Click me!
       </button>
-    );
-  };
+  );
 }
 
-export default Clock;
+export default GoodButton;
