@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import './button.scss';
 
-class Clock extends Component {
+class GoodButton extends Component {
 
-  constructor(props) {
-    super(props);
+  handleClick(e) {
+    alert(e.target.textContent);
   }
 
   render() {
     return (
       <button
         className="fancy-button"
-        onClick={() => alert('Good job!')}>
+        onClick={this.handleClick}>
         Click me!
-      </button>
+        </button>
     );
   };
 }
 
-export default Clock;
+export default GoodButton;
