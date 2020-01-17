@@ -1,10 +1,10 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import Auth from './Auth';
 import './app.scss';
 
 function App() {
   return (
-      <ColorPicker />
+      <Auth />
   );
 }
 
