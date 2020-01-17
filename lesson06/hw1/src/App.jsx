@@ -1,10 +1,11 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import Status from './Status';
 import './app.scss';
 
 function App() {
+
   return (
-      <ColorPicker />
+      <Status isOnline={false} />
   );
 }
 
