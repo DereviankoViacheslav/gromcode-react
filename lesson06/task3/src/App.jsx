@@ -1,10 +1,10 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import Page from './Page';
 import './app.scss';
 
 function App() {
   return (
-      <ColorPicker />
+      <Page />
   );
 }
 
