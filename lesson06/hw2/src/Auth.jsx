@@ -42,7 +42,7 @@ class Auth extends Component {
       : <Login onLogin={this.login} />;
 
     return <div className="main">
-      {this.state.isVisibleSpinner ? <Spinner size={20} /> : button}
+      {this.state.isVisibleSpinner ? <Spinner size={50} /> : button}
     </div>
   };
 }

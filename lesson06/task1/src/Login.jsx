@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Logout(props) {
+function Login({ onLogin }) {
 
   return (
-    <button className="login btn" onClick={props.click}>Login</button>
+    <button className="login btn" onClick={onLogin}>Login</button>
   );
 };
 
-export default Logout;
+export default Login;

@@ -3,7 +3,8 @@ import React from 'react';
 function Spiner({ size }) {
 
   let style = {
-    padding: `${size}px`
+    width: `${size}px`,
+    height: `${size}px`,
   };
 
   return (
