@@ -1,10 +1,10 @@
 import React from 'react';
-import ColorPicker from './ColorPicker';
+import Mailbox from './Mailbox';
 import './app.scss';
 
 function App() {
   return (
-      <ColorPicker />
+      <Mailbox unreadMessages={['A', 'B']} />
   );
 }
 
