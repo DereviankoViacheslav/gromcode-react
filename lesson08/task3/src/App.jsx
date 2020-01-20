@@ -1,10 +1,10 @@
 import React from 'react';
-import Clock from './Clock';
+import Dimensions from './Dimensions';
 import './app.scss';
 
 function App() {
   return (
-    <Clock />
+    <Dimensions />
   );
 }
 
