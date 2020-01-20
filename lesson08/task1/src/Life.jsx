@@ -12,7 +12,7 @@ class Life extends Component {
     console.log('componentDidMount: API calls, subscriptions');
   }
 
-  shoudlComponentUpdate() {
+  shouldComponentUpdate() {
     console.log('shoudlComponentUpdate(nextProps, nextState): decide to render or not to render');
     return true;
   }
