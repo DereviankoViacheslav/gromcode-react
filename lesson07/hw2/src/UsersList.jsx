@@ -27,7 +27,11 @@ class UsersList extends Component {
     let startIndex = currentPage * itemsPerPage;
     const showedUsers = this.props.users
       .slice(startIndex, itemsPerPage + startIndex)
-      .map(({ id, ...user }) => <User {...user} key={id} />);
+      .map(({ id, ...user }) => (
+        <li className="user" key={id}>
+          <User {...user} />
+        </li>
+      ));
 
     return (
       <div>
