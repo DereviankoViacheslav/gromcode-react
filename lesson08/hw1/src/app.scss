@@ -10,6 +10,16 @@ body {
   justify-content: center;
 }
 
-.status_offline {
-  border: 2px solid red;
+.status {
+  padding: 8px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &_offline {
+      border-color: #f00;
+  }
 }
