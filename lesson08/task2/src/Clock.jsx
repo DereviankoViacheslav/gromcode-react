@@ -12,7 +12,6 @@ class Clock extends Component {
     super(props);
 
     this.state = {
-      location: props.location,
       time: formatTime(props.offset),
     };
   }
@@ -32,7 +31,7 @@ class Clock extends Component {
   render() {
     return (
       <div className="clock">
-        <div className="clock__location">{this.state.location}</div>
+        <div className="clock__location">{this.props.location}</div>
         <div className="clock__time">{this.state.time}</div>
       </div>
     );
