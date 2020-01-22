@@ -1,10 +1,10 @@
 import React from 'react';
-import User from './User';
+import UserForm from './UserForm';
 import './app.scss';
 
 function App() {
   return (
-    <User userId={'facebook'}/>
+    <UserForm />
   );
 }
 
