@@ -1,10 +1,10 @@
 import React from 'react';
-import User from './User';
+import Search from './Search';
 import './app.scss';
 
 function App() {
   return (
-    <User userId={'facebook'}/>
+    <Search />
   );
 }
 
