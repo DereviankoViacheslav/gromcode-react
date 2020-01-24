@@ -16,12 +16,13 @@ class UsersList extends Component {
 
   render() {
 
-    const users = this.props.users
-      .filter(({ name }) => {
-        if(!this.state.searchValue) return true;
+    let users = [...this.props.users];
+    if (this.state.searchValue) {
+      users = users.filter(({ name }) => {
         return name.toLowerCase().indexOf(this.state.searchValue.toLowerCase()) !== -1;
-      })
-      .map(({ id, ...user }) => <User key={id} {...user} />);
+      });
+    }
+    users = users.map(({ id, ...user }) => <User key={id} {...user} />);
 
     return (
       <div>
