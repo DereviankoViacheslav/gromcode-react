@@ -1,9 +1,8 @@
 import React from 'react';
 
 function ProductsList({ cartItems }) {
-  let total = 0;
+  let total = cartItems.reduce((acc, { price }) => (acc += price), 0);
   const items = cartItems.map(({ id, name, price }) => {
-    total += price;
     return (
       <li key={id} className="products__list-item">
         <span className="products__item-name">{name}</span>
