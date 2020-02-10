@@ -1,10 +1,10 @@
 import React from 'react';
-import User from './User';
+import Dialog from './Dialog';
 import './app.scss';
 
 function App() {
   return (
-    <User />
+    <Dialog />
   );
 }
 
