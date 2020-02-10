@@ -1,10 +1,10 @@
 import React from 'react';
-import Auth from './Auth';
+import User from './User';
 import './app.scss';
 
 function App() {
   return (
-    <Auth />
+    <User />
   );
 }
 
