@@ -1,10 +1,10 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import User from './User';
 import './app.scss';
 
 function App() {
   return (
-    <MyComponent />
+    <User />
   );
 }
 
