@@ -1,10 +1,18 @@
-import React from 'react';
-import MyComponent from './MyComponent';
+import React, { useState } from 'react';
+import Dimension from './Dimension.jsx';
 import './app.scss';
 
 function App() {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
-    <MyComponent />
+    <div>
+      <div>
+        <button className="btn" onClick={() => setIsVisible(true)}>Show</button>
+        <button className="btn" onClick={() => setIsVisible(false)}>Hide</button>
+      </div>
+      {isVisible && <Dimension />}
+    </div>
   );
 }
 
