@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Dimension from './Dimension.jsx';
+import Dimensions from './Dimensions';
 import './app.scss';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <button className="btn" onClick={() => setIsVisible(true)}>Show</button>
         <button className="btn" onClick={() => setIsVisible(false)}>Hide</button>
       </div>
-      {isVisible && <Dimension />}
+      {isVisible && <Dimensions />}
     </div>
   );
 }
