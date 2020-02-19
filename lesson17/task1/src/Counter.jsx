@@ -4,10 +4,10 @@ function Counter() {
   const [counter, setCounter] = useState(0);
 
   return (
-    <div class="counter">
-      <button class="counter__button" onClick={() => setCounter(counter - 1)} >-</button>
-      <span class="counter__value" onClick={() => setCounter(0)} >{counter}</span>
-      <button class="counter__button" onClick={() => setCounter(counter + 1)} >+</button>
+    <div className="counter">
+      <button className="counter__button" onClick={() => setCounter(counter - 1)} >-</button>
+      <span className="counter__value" onClick={() => setCounter(0)} >{counter}</span>
+      <button className="counter__button" onClick={() => setCounter(counter + 1)} >+</button>
     </div>
   );
 }
