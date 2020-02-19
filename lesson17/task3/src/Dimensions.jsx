@@ -10,8 +10,8 @@ function Dimensions() {
     const { innerWidth, innerHeight } = window;
     setDimensions({ width: innerWidth, height: innerHeight });
 
-    const handleResize = (e) => {
-      const { innerHeight, innerWidth } = e.target;
+    const handleResize = (event) => {
+      const { innerHeight, innerWidth } = event.target;
       setDimensions({ width: innerWidth, height: innerHeight });
     }
 
