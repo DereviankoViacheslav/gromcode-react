@@ -1,10 +1,10 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import ConnectionStatus from './ConnectionStatus';
 import './app.scss';
 
 function App() {
   return (
-    <MyComponent />
+    <ConnectionStatus />
   );
 }
 
